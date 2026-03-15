@@ -1,0 +1,73 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  apps/studio:
+    dependencies:
+      '@studio/domain':
+        specifier: file:../../packages/domain
+        version: link:../../packages/domain
+      '@studio/media':
+        specifier: file:../../packages/media
+        version: link:../../packages/media
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
+      zustand:
+        specifier: ^4.5.5
+        version: 4.5.5(@types/react@18.3.5)(react@18.3.1)
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: ^6.6.2
+        version: 6.6.2
+      '@testing-library/react':
+        specifier: ^16.0.1
+        version: 16.0.1(@testing-library/dom@10.4.0)(@types/react@18.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@types/react':
+        specifier: ^18.3.5
+        version: 18.3.5
+      '@types/react-dom':
+        specifier: ^18.3.0
+        version: 18.3.0
+      '@vitejs/plugin-react':
+        specifier: ^4.3.2
+        version: 4.3.2(vite@5.4.5(@types/node@22.18.0))
+      jsdom:
+        specifier: ^25.0.0
+        version: 25.0.0
+      typescript:
+        specifier: ^5.6.2
+        version: 5.6.2
+      vite:
+        specifier: ^5.4.5
+        version: 5.4.5(@types/node@22.18.0)
+      vitest:
+        specifier: ^2.1.1
+        version: 2.1.1(@types/node@22.18.0)(jsdom@25.0.0)
+
+  packages/domain:
+    devDependencies:
+      typescript:
+        specifier: ^5.6.2
+        version: 5.6.2
+      vitest:
+        specifier: ^2.1.1
+        version: 2.1.1(@types/node@22.18.0)(jsdom@25.0.0)
+
+  packages/media:
+    devDependencies:
+      typescript:
+        specifier: ^5.6.2
+        version: 5.6.2
+      vitest:
+        specifier: ^2.1.1
+        version: 2.1.1(@types/node@22.18.0)(jsdom@25.0.0)

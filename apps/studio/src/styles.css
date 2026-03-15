@@ -1,0 +1,56 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #dbe2f0;
+  background: #0d1117;
+}
+
+body {
+  margin: 0;
+}
+
+.layout {
+  padding: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 16px;
+}
+
+section,
+aside {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.button-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+button {
+  background: #238636;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.preview {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: black;
+}
+
+.error-banner {
+  background: #3d1117;
+  border: 1px solid #f85149;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
